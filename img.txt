@@ -1,0 +1,9 @@
+1-logo
+2-male
+3-banner
+4-why us
+5-explore
+6-trainer*3
+7-cilent
+8-testinomial
+9-discout

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
+/* Base */
+:root {
+  --clr-primary: #29a396;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#111, #071a1a);
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
