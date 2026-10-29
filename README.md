@@ -9,39 +9,47 @@ A full-stack gym membership web application built with PHP, MySQL, HTML/CSS, and
 ```
 gym-website/
 │
-├── index.html              # Landing page (Home)
-├── style.css               # Main landing page styles
-├── script.js               # Mobile navbar toggle script
+├── index.html                  # Landing page (entry point)
+├── README.md
 │
-├── register.php            # User registration form & logic
-├── login.php               # User login form & logic
-├── logout.php              # Session destroy & redirect
-├── welcome.php             # Post-login dashboard
-├── register.css            # Shared auth page styles
+├── assets/
+│   ├── css/
+│   │   ├── style.css           # Landing page styles
+│   │   ├── register.css        # Shared auth page styles
+│   │   ├── Bmi2.css            # BMI calculator styles
+│   │   └── cart.css            # Cart background style
+│   │
+│   ├── js/
+│   │   ├── script.js           # Mobile navbar toggle
+│   │   └── bmi.js              # BMI calculation logic
+│   │
+│   ├── images/
+│   │   ├── logo.jpg
+│   │   ├── back.jpg
+│   │   ├── male.jpg            # Package image – 1 Year
+│   │   ├── female.jpeg         # Package image – 6 Month
+│   │   ├── 1month.jpg          # Package image – 1 Month
+│   │   ├── 2month.jpg          # Package image – 3 Month
+│   │   ├── 2year.jpg           # Package image – 2 Year
+│   │   ├── 3year.jpg           # Package image – 3 Year
+│   │   └── GYM WEBSITE VIDEO.gif
+│   │
+│   └── img.txt                 # Image reference notes
 │
-├── bmi1.php                # BMI Calculator page (PHP + session)
-├── bmi.js                  # BMI calculation logic (JavaScript)
-├── Bmi2.css                # BMI page styles
+├── php/
+│   ├── config.php              # Database connection configuration
+│   ├── login.php               # Login form & logic
+│   ├── register.php            # Registration form & logic
+│   ├── logout.php              # Session destroy & redirect
+│   ├── welcome.php             # Post-login dashboard
+│   ├── bmi1.php                # BMI Calculator page
+│   ├── addtocart.php           # Package listing page
+│   ├── cart.php                # Shopping cart view
+│   ├── checkout.php            # Checkout form
+│   └── action.php              # AJAX backend handler (cart & orders)
 │
-├── addtocart.php           # Product/Package listing page
-├── cart.php                # Shopping cart view
-├── checkout.php            # Checkout form page
-├── action.php              # AJAX backend handler (cart & order actions)
-├── cart.css                # Cart page body background style
-│
-├── config.php              # Database connection configuration
-├── GYM.sql                 # MySQL database schema + seed data
-│
-├── logo.jpg                # Gym logo image
-├── back.jpg                # Background image asset
-├── male.jpg                # Membership package image (1-Year)
-├── female.jpeg             # Membership package image (6-Month)
-├── 1month.jpg              # Package image – 1 Month
-├── 2month.jpg              # Package image – 3 Month
-├── 2year.jpg               # Package image – 2 Year
-├── 3year.jpg               # Package image – 3 Year
-├── GYM WEBSITE VIDEO.gif   # Promotional GIF/animation
-└── img.txt                 # Image reference notes
+└── database/
+    └── GYM.sql                 # MySQL schema + seed data
 ```
 
 ---
@@ -269,6 +277,8 @@ Duplicate prevention in `action.php` checks `product_code` against the shared ca
    ```
    http://localhost/gym/index.html
    ```
+
+   All PHP files are under `php/` and will work relative to the project root. Images are served from `assets/images/`.
 
 ---
 

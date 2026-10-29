@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GYM Landing Page</title>
-    <!-- Ion Icons Js -->
+    <!-- Ion Icons -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <!-- JS -->
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
@@ -23,27 +22,20 @@
                 <ion-icon name="grid"></ion-icon>
             </div>
             <div class="logo">
-                <img src="logo.jpg" alt="logo" />
+                <img src="assets/images/logo.jpg" alt="logo" />
             </div>
 
             <ul class="nav">
                 <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#why-us">Features</a></li>
                 <li class="nav-item"><a href="#explore">Explore</a></li>
-                <li class="nav-item"><a href="login.php">Login</a></li>
-                <li class="nav-item"><a href="logout.php">Logout</a></li>
+                <li class="nav-item"><a href="php/login.php">Login</a></li>
+                <li class="nav-item"><a href="php/logout.php">Logout</a></li>
             </ul>
 
-            <a href="register.php" class="btn">Register</a>
+            <a href="php/register.php" class="btn">Register</a>
         </div>
-        <!-- <div class="navbar-collapse collapse">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                  <a class="nav-link" href="#"> <img src="https://img.icons8.com/metro/26/000000/guest-male.png"> <?php echo "Welcome ". $_SESSION['username']?></a>
-                </li>
-            </ul>
-            </div>
-    </div> -->
+    </div>
     <!-- End Menu -->
 
     <!-- Header -->
@@ -61,19 +53,15 @@
                     3-Planks for your core, back, and shoulders.
                     4-Push-ups for your chest, shoulders, triceps, and core.
                     5-Pull-ups for your biceps, triceps, forearms, wrists, shoulders, and core.
-                    6-Shoulder presses for your core, shoulders, and back. Tip: To help prevent injury, try sand-filled weights instead of dumbbells.
-                    7-Stackers for your whole body. Not familiar with stackers? Here’s what to do:
-                           - Stand with your feet a little more than shoulder’s width apart and pretend to hold a basketball straight out in front of you.
-                           - Bend at the waist to reach and tap the outside of your left heel.
-                            -Then reach back up and across your body to the right, as if you’re stacking a box on a shelf right above your shoulder.
-                            -As you twist across your body, your left heel may come off the ground as you pivot your hips to the right.
+                    6-Shoulder presses for your core, shoulders, and back.
+                    7-Stackers for your whole body.
                 </p>
 
                 <a href="#" class="btn mt">Get Started Now</a>
             </div>
 
             <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/banner-img.png" alt="male" />
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/banner-img.png" alt="banner" />
             </div>
         </div>
     </header>
@@ -84,20 +72,19 @@
         <div class="container flex">
             <div class="text">
                 <h2 class="primary mb">Why Choose Us?</h2>
-                <h3 class="secondary mb">Consulatation with Expert.</h3>
+                <h3 class="secondary mb">Consultation with Expert.</h3>
                 <p class="tertiary">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quos
                     maxime tempore?
                 </p>
-
-                <h3 class="secondary mb">Consulatation with Expert.</h3>
+                <h3 class="secondary mb">Consultation with Expert.</h3>
                 <p class="tertiary">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quos
                     maxime tempore?
                 </p>
             </div>
             <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/why-us.png" alt="" />
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/why-us.png" alt="why us" />
             </div>
         </div>
     </div>
@@ -107,7 +94,7 @@
     <div class="section" id="explore">
         <div class="container flex">
             <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/explore.jpg" alt="" />
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/explore.jpg" alt="explore" />
             </div>
             <div class="text">
                 <h2 class="primary mb">
@@ -116,10 +103,8 @@
                 </h2>
                 <p class="tertiary mb">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                    esse vitae ratione quos maiores eveniet temporibus illum! Eligendi
-                    amet officia unde sint totam ut optio. Molestiae, illo quia?
+                    esse vitae ratione quos maiores eveniet temporibus illum!
                 </p>
-
                 <a href="#" class="btn mt">Get Started Now</a>
             </div>
         </div>
@@ -131,39 +116,22 @@
         <h2 class="primary mb">Our Professional Trainers</h2>
         <div class="container flex">
             <div class="trainer">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer1.jpg" alt="" />
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer1.jpg" alt="trainer 1" />
                 <h3 class="secondary mb">Alan Smith</h3>
-                <p class="tertiary mb">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.
-                </p>
-
-                <a href="#" class="btn-2">
-                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
-                </a>
+                <p class="tertiary mb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.</p>
+                <a href="#" class="btn-2"><ion-icon name="arrow-redo-circle-outline"></ion-icon></a>
             </div>
-
             <div class="trainer">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer2.jpg" alt="" />
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer2.jpg" alt="trainer 2" />
                 <h3 class="secondary mb">Alan Smith</h3>
-                <p class="tertiary mb">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.
-                </p>
-
-                <a href="#" class="btn-2">
-                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
-                </a>
+                <p class="tertiary mb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.</p>
+                <a href="#" class="btn-2"><ion-icon name="arrow-redo-circle-outline"></ion-icon></a>
             </div>
-
             <div class="trainer">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer3.jpg" alt="" />
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer3.jpg" alt="trainer 3" />
                 <h3 class="secondary mb">Alan Smith</h3>
-                <p class="tertiary mb">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.
-                </p>
-
-                <a href="#" class="btn-2">
-                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
-                </a>
+                <p class="tertiary mb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.</p>
+                <a href="#" class="btn-2"><ion-icon name="arrow-redo-circle-outline"></ion-icon></a>
             </div>
         </div>
     </div>
@@ -173,29 +141,20 @@
     <div class="section" id="testimonial">
         <div class="container flex">
             <div class="text">
-                <h2 class="primary">
-                    That's What Our Super <br />
-                    Client Says
-                </h2>
-
-                <br />
-                <br />
-                <br />
-
+                <h2 class="primary">That's What Our Super <br /> Client Says</h2>
+                <br /><br /><br />
                 <div class="client">
-                    <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/client1.jpg" alt="" />
-                    <h2 class="secondary">Exelent Training</h2>
+                    <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/client1.jpg" alt="client" />
+                    <h2 class="secondary">Excellent Training</h2>
                     <p class="tertiary">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-                        quas voluptatem ad, repudiandae voluptates odio deleniti
-                        reiciendis in veniam quidem expedita maxime error fugit. Pariatur
-                        quasi sunt aut id. Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Neque, officiis.
+                        quas voluptatem ad, repudiandae voluptates odio deleniti reiciendis
+                        in veniam quidem expedita maxime error fugit.
                     </p>
                 </div>
             </div>
             <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/testimonial.png" alt="" />
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/testimonial.png" alt="testimonial" />
             </div>
         </div>
     </div>
@@ -205,21 +164,17 @@
     <div class="section" id="discount">
         <div class="container flex">
             <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/discount.png" alt="" />
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/discount.png" alt="discount" />
             </div>
             <div class="text">
                 <h2 class="primary mb">
                     Fitness Classes This Summer, Pay Now And Get 25% Discount
                 </h2>
-
                 <p class="tertiary mb">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime
-                    minus praesentium est et veniam voluptate alias excepturi minima
-                    placeat amet nostrum, eligendi, quod cum ducimus nesciunt ipsa eum,
-                    explicabo eaque obcaecati.
+                    minus praesentium est et veniam voluptate alias excepturi minima.
                 </p>
-
-                <a href="login.php" class="btn bt">Book Now</a>
+                <a href="php/login.php" class="btn bt">Book Now</a>
             </div>
         </div>
     </div>
@@ -228,14 +183,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container flex">
-            <p class="tertiary">
-                &copy; 2023 Programmer Cloud. All Rights Reserved.
-            </p>
+            <p class="tertiary">&copy; 2023 Programmer Cloud. All Rights Reserved.</p>
         </div>
     </footer>
-
     <!-- End Footer -->
-    <script src="script.js"></script>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
